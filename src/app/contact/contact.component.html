@@ -1,0 +1,33 @@
+<div class="modal" [ngClass]="{ 'is-active' : isContact }">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Contact Us</p>
+        <button class="delete" (click)="toggle()" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Name">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input class="input" type="email" placeholder="Email">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Textarea"></textarea>
+          </div>
+        </div>
+      </section>
+      <footer class="modal-card-foot">
+        <div class="button is-link is-fullwidth " [ngClass]="{ 'is-loading' : isloading }" (click)='submit()'>Submit</div>
+      </footer>
+    </div>
+  </div>

@@ -1,0 +1,56 @@
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation" style="border-bottom: 0.5px solid lightgrey;">
+  <div class="navbar-brand">
+    <a class="navbar-item" [routerLink]="['/']" routerLinkActive="router-link-active" >
+      <img src="../assets/Logo.webp" width="60px" height="60px"/>
+    </a>
+
+    <a
+      role="button"
+      class="navbar-burger burger"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarBasicExample"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-end">
+      <a class="navbar-item" [routerLink]="['/']" routerLinkActive="router-link-active" >
+          Home
+      </a>
+
+      <a class="navbar-item" [routerLink]="['/book']" routerLinkActive="router-link-active" >
+        Services
+      </a>
+
+      <a class="navbar-item" [routerLink]="['/book']" routerLinkActive="router-link-active" >
+        Book Now
+      </a>
+
+      <a class="navbar-item">
+        Detailing Tips
+      </a>
+
+      <a class="navbar-item" [routerLink]="['/about']" routerLinkActive="router-link-active" >
+        About Us
+      </a>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons" (click)="show = !show">
+          <a class="button is-link is-outlined">
+            <strong>Contact Us</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div *ngIf="show">
+<app-contact></app-contact>
+</div>

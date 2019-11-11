@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,700&display=swap');
+
+// Update Bulma's global variables
+$family-sans-serif: "Raleway",Sans-serif;
+$widescreen-enabled: false;
+
+
+// Customization
+$navbar-item-img-max-height: unset;
+$navbar-height: 5.625rem;
+.navbar-brand{
+    margin-left: 50px;
+}
+a.navbar-item{
+    font-family: "Raleway",Sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 10px;
+}
+
+//home Page Contact boxs
+.homebox{
+    padding-top: 35px;
+    height: 12rem;
+    position:relative;
+    text-align: center;
+    width: 100%;
+}
+.homebox a{
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    position: relative;
+}
+.homebox svg{
+    padding-bottom: 15px;
+}
+
+.herotitle{
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+
+.hero{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , var(--image-url ) center center;
+  background-size: cover;
+}
+$dimensions: 16 24 32 48 64 96 128 256 350;
+// Import only what you need from Bulma
+@import "../node_modules/bulma/bulma.sass";
