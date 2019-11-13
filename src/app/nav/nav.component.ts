@@ -6,6 +6,10 @@ import { Component, OnInit} from '@angular/core';
 })
 export class NavComponent implements OnInit {
   show = false;
+  hamburger = false;
+  toggle() {
+    this.hamburger = !this.hamburger;
+  }
   constructor() { }
 
   ngOnInit() {

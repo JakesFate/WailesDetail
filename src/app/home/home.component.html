@@ -1,5 +1,5 @@
 <!-- Header Hero-->
-<section class="hero is-info is-large" style="--image-url:url(https://www.wailesdetail.com/wp-content/uploads/ezgif-1-66c5a9c31e0b.webp)">
+<section class="hero is-info is-large" style="--image-url:url(../assets/Hero.webp)">
   <div class="hero-body">
     <div class="container">
       <h1 class="herotitle has-text-centered">
@@ -31,10 +31,10 @@
       </div>
     </div>
     <div class="column">
-      <div class="homebox">
-        <a href="mailto:Jacob@WailesDetail.com?Subject=Hello%20I%20Have%20A%20Question" target="_top">
+      <div class="homebox" (click)="contact = !contact">
+        <a >
           <svg class="plane" xmlns="http://www.w3.org/2000/svg" fill="color: #4F4F4F" width="auto" height="5rem" viewBox="0 0 24 24"> <path d="M0 12l11 3.1 7-8.1-8.156 5.672-4.312-1.202 15.362-7.68-3.974 14.57-3.75-3.339-2.17 2.925v-.769l-2-.56v7.383l4.473-6.031 4.527 4.031 6-22z" /></svg></a>
-        <a class="email" href="mailto:Jacob@WailesDetail.com?Subject=Hello%20I%20Have%20A%20Question" target="_top" style="color: #4f4f4f">Jacob@WailesDetail.com</a>
+        <a class="email" (click)="contact = !contact" style="font-style: oblique; font-weight: 600; color: #4f4f4f">Jacob@WailesDetail.com</a>
       </div>
     </div>
     <div class="column">
